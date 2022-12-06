@@ -1,3 +1,58 @@
+# DjangoX and Custom Users
+
+## Project: 
+
+## Author(s): Yazan Alfarra
+
+## Project Description
+
+Implementation of Django custom users using DjangoX
+
+## Login to the admin pannel
+
+- **Username:** admin
+- **Password:** 0000
+
+## Installing the requirements
+
+```
+$ pip install -r requirements.txt
+```
+
+## Running the server
+
+```
+$ python manage.py runserver
+```
+
+## Executing the tests
+
+```
+$ python manage.py test
+```
+ 
+## Program Output
+
+**Home Page**
+
+
+
+**Add Page**
+
+
+
+**Detail Page**
+
+
+
+**Update Page**
+
+
+
+**Delete Page**
+
+
+---
 > A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
