@@ -10,8 +10,8 @@ Implementation of Django custom users using DjangoX
 
 ## Login to the admin pannel
 
-- **Username:** admin
-- **Password:** 0000
+- **Username:** yalfarra@outlook.com
+- **Password:** VaEM75sW4h4znp@
 
 ## Installing the requirements
 
