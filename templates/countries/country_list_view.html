@@ -1,0 +1,75 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/country_list_view.css' %}" />
+<div class="list-views">
+    {% if countries|length == 0 %}
+        <h3>No countries found 😥</h3>
+        <button><a href="{% url 'create_view' %}">Add Country</a></button>
+    {% else %}
+        <div>
+        <h4>Asia</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "Asia" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>Africa</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "Africa" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>North America</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "North America" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>South America</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "South America" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>Antarctica</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "Antarctica" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>Europe</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "Europe" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div>
+        <h4>Oceania</h4>
+        <hr>
+        {% for country in countries %}
+            {% if country.continent == "Oceania" %}
+                <a href="{% url 'detail_view' country.pk %}">{{country.country_name}}</a><br>
+            {% endif %}
+        {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

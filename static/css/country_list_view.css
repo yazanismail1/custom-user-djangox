@@ -1,0 +1,17 @@
+.list-views {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-views h4 {
+    padding-top: 25px;
+}
+
+.list-views div {
+    padding: 0 15px;
+}
+
+.list-views div a {
+    text-decoration: none;
+}

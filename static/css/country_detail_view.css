@@ -1,0 +1,33 @@
+.detail-view {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.detail-view img {
+    width: 100%;
+}
+
+.detail-view .inner a button {
+    background-color: #EB6440;
+    /* width: 20%; */
+    padding: 5px;
+    height: 35px;
+    border-radius: 0.375rem;
+    border: none;
+    color: #D6E4E5;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.detail-view .inner a button:hover {
+    background-color: #497174;
+    /* width: 20%; */
+    padding: 5px;
+    height: 35px;
+    border-radius: 0.375rem;
+    border: none;
+    color: #EFF5F5;
+    font-weight: 500;
+    transition: 0.5s;
+}

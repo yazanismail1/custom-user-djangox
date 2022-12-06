@@ -1,0 +1,31 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/country_detail_view.css' %}" />
+    <div class="detail-view">
+        <img src='{{ country.flag_img.url }}'/>
+        <div class="inner">
+            {% if country.country_name == "Jordan" or country.country_name == "Palestine" %}
+            <h3>Country: {{ country.country_name }}</h3>
+            <hr>
+            <p><strong>Capital City: </strong>{{ country.capital_city }}</p>
+            <p><strong>Continent: </strong>{{ country.continent }}</p>
+            <p><strong>Time Zone: </strong>{{ country.time_zone }}</p>
+            <p><strong>National Dish: </strong>{{ country.national_dish }}</p>
+            <p><strong>Author: </strong>{{ country.author }}</p>
+            <p>Sorry you can't edit and delete <strong>{{ country.country_name }}</strong></p>
+            {% else %}
+            <h3>Country: {{ country.country_name }}</h3>
+            <hr>
+            <p><strong>Capital City: </strong>{{ country.capital_city }}</p>
+            <p><strong>Continent: </strong>{{ country.continent }}</p>
+            <p><strong>Time Zone: </strong>{{ country.time_zone }}</p>
+            <p><strong>National Dish: </strong>{{ country.national_dish }}</p>
+            <p><strong>Author: </strong>{{ country.author }}</p>
+            <a href="{% url 'update_view' country.pk%}"><button>Edit Country</button></a>
+            <a href="{% url 'delete_view' country.pk %}"><button>Remove Country</button></a>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock content%}

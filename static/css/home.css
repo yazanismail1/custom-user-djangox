@@ -1,0 +1,24 @@
+.pricing-header button {
+    background-color: #EB6440;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    display: inline;
+}
+
+.pricing-header a {
+    text-decoration: none;
+}
+
+.pricing-header button  {
+    color: #EFF5F5;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.pricing-header button:hover {
+    color: #EB6440;
+    background-color: #D6E4E5;
+    transition: 0.5s;
+}
