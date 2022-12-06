@@ -35,22 +35,30 @@ $ python manage.py test
 
 **Home Page**
 
+![](static/images/screencapture-127-0-0-1-8000-2022-12-06-21_59_03.jpg)
 
+**List of Countries Page**
 
-**Add Page**
+![](static/images/screencapture-127-0-0-1-8000-countries-2022-12-06-21_59_47.jpg)
 
+**Add Country Page**
 
+![](static/images/screencapture-127-0-0-1-8000-countries-create-2022-12-06-22_00_34.jpg)
 
 **Detail Page**
 
+![](static/images/screencapture-127-0-0-1-8000-countries-2-2022-12-06-22_01_14.jpg)
+
+![](static/images/screencapture-127-0-0-1-8000-countries-10-2022-12-06-22_01_50.jpg)
 
 
 **Update Page**
 
-
+![](static/images/screencapture-127-0-0-1-8000-countries-update-10-2022-12-06-22_02_19.jpg)
 
 **Delete Page**
 
+![](static/images/screencapture-127-0-0-1-8000-countries-delete-8-2022-12-06-22_02_57.jpg)
 
 ---
 > A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
